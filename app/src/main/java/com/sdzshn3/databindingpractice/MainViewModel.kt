@@ -11,7 +11,7 @@ class MainViewModel: ViewModel() {
 
     init {
         text.value = "First try"
-        Timer(false).schedule(5000) {
+        Timer(false).schedule(2500) {
             text.postValue("From server.. Is it?")
         }
     }

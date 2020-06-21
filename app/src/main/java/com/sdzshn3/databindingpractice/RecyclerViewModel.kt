@@ -21,7 +21,7 @@ class RecyclerViewModel : ViewModel() {
         list.add(Android("10"))
         androidsLiveData.value = list
 
-        Timer(false).schedule(5000) {
+        Timer(false).schedule(2500) {
             list.add(Android("Nougat"))
             list.add(Android("Oreo"))
             list.add(Android("Pie"))
