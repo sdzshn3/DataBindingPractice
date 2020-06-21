@@ -1,5 +1,6 @@
 package com.sdzshn3.databindingpractice
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import java.util.*
@@ -17,7 +18,4 @@ class MainViewModel: ViewModel() {
         }
     }
 
-    fun printTextToLog() {
-        println("haha: ${text.value}")
-    }
 }

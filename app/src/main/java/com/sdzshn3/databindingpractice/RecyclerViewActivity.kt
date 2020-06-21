@@ -19,7 +19,7 @@ class RecyclerViewActivity : AppCompatActivity() {
         bind.recyclerView.setHasFixedSize(false)
 
         viewModel.androids.observe(this, Observer {
-            adapter.submitList(it)
+            adapter.submitList(ArrayList(it))
         })
     }
 }
