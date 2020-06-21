@@ -1,6 +1,5 @@
 package com.sdzshn3.databindingpractice
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import java.util.*
@@ -13,7 +12,6 @@ class MainViewModel: ViewModel() {
     init {
         text.value = "First try"
         Timer(false).schedule(5000) {
-
             text.postValue("From server.. Is it?")
         }
     }

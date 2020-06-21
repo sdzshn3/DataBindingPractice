@@ -8,7 +8,7 @@ import kotlin.concurrent.schedule
 
 class RecyclerViewModel : ViewModel() {
 
-    val androidsLiveData = MutableLiveData<List<Android>>()
+    private val androidsLiveData = MutableLiveData<List<Android>>()
 
     val androids: LiveData<List<Android>>
         get() = androidsLiveData
