@@ -12,14 +12,16 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".RecyclerViewActivity">
+        tools:context=".RecyclerViewActivity"
+        android:background="@color/colorGrey">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:adapter="@{adapter}" />
+            android:adapter="@{adapter}"
+            tools:listitem="@layout/item_layout"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
