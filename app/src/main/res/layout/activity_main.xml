@@ -13,20 +13,26 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:background="@color/colorGrey">
 
         <EditText
             android:id="@+id/et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
             android:text="@={viewModel.text}"
             android:hint="Type anything"
+            android:padding="10dp"
             android:inputType="text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:autofillHints="@null" />
+            android:autofillHints="@null"
+            android:textColor="@color/colorText"
+            android:background="@drawable/white_rounded_corner"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,16 +41,24 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:text="@{viewModel.text}"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="50dp"
+            android:textColor="@color/colorText"
+            tools:text="dummy text"
+            android:textSize="18sp"/>
         <Button
             android:id="@+id/recyclerViewExpBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="recyclerview example"
+            android:text="Recyclerview Example"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            android:padding="10dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginEnd="10dp" />
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/white_rounded_corner"
+            android:textColor="@color/colorText"
+            android:textAllCaps="false"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
